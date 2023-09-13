@@ -1,7 +1,7 @@
 # CosmeticsStore
   Cosmetics and personal care products
-# Header
+# **Header**
   - Tüm sayfalarda görünencek olan indirim bilgisi eklendi / global-notification
   - Header kısmı kısımda oluştu ana kapsayıcı içinde sol , merkez ve sağ kısım 
-  - Header kısmında bulunan linkler active sınıfı eklendi 
+  - Header kısmında bulunan linklere active sınıfı eklendi 
 
