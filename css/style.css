@@ -155,3 +155,31 @@ header {
     font-weight: 500;
 }
 /*! header end  */
+
+
+/* container responsive */
+@media(max-width:1200px){
+   .container{
+    max-width: 992px;
+   }
+}
+@media(max-width:992px){
+   .container{
+    max-width: 768px;
+   }
+}
+@media(max-width:768px){
+   .container{
+    max-width: 576px;
+   }
+}
+@media(max-width:576px){
+   .container{
+    max-width: 400px;
+   }
+}
+@media(max-width:420px){
+   .container{
+    max-width: 350px;
+   }
+}
