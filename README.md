@@ -6,6 +6,6 @@
   - Header kısmında bulunan linklere active sınıfı eklendi 
 
 ---
-# Sözleşme 
+# Sözleşme Maddeleri 
 ### Site sözleşme politika maddeleri aşağıdaki web sitesinden oluşturuldu 
 [SÖZLEŞME](https://www.privacypolicyonline.com/)
