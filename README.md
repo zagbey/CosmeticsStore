@@ -5,3 +5,7 @@
   - Header kısmı kısımda oluştu ana kapsayıcı içinde sol , merkez ve sağ kısım 
   - Header kısmında bulunan linklere active sınıfı eklendi 
 
+---
+# Sözleşme 
+### Site sözleşme politika maddeleri aşağıdaki web sitesinden oluşturuldu 
+[SÖZLEŞME](https://www.privacypolicyonline.com/)
