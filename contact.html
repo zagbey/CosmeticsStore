@@ -131,7 +131,12 @@
                             </label>
                             <textarea id="author" name="author" type="text" value="" size="30" required=""></textarea>
                         </div>
-                        <button class="btn btn-sm">Send Message</button>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-secondary bg-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Bilgileri Gönder
+                        </button>
+                        <!-- <button class="btn btn-sm form-button">Send Message</button> -->
                     </form>
                     <div class="contact-info">
                         <div class="contact-info-item">
@@ -155,10 +160,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Launch demo modal
-            </button>
+
 
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -166,11 +168,11 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Bilgilendirme</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, deleniti possimus ut veniam officiis voluptatum!
+                            The information was sent successfully.Our team members will return as soon as possible
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
