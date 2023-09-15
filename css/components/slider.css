@@ -24,7 +24,10 @@
     background-color: #E6E6E6;
     z-index: -3;
 }
-
+.slider-item a{
+    position: relative;
+    z-index: 1;
+}
 .slider .slider-buttons{
     top:0;
     left: 0;
