@@ -1,0 +1,18 @@
+.site-main .product-info {
+  width: 50%;
+  padding-left: 15px;
+}
+.site-main .product-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+.site-main .product-review {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  margin: 10px 0;
+}
+.site-main .product-review ul,
+.site-main .product-review ul li {
+  display: flex;
+}
