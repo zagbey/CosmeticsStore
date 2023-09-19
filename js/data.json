@@ -8,11 +8,12 @@
         },
         "discount": 50,
         "img": {
-            "singleImage": "img/product/product1hp.jpg",
+            "singleImage": "../img/product/product1hp.jpg",
             "thumbs": [
-                "img/product/product2/prd2.jpg",
-                "img/product/product2/prd2_1.jpg",
-                "img/product/product2/prd2_2.jpg"
+                
+                "../img/product/product2/prd2.jpg",
+                "../img/product/product2/prd2_1.jpg",
+                "../img/product/product2/prd2_2.jpg"
             ]
         }
     },
@@ -28,8 +29,42 @@
             "singleImage": "../img/product/product3/product3hp.jpg",
             "thumbs": [
                 "../img/product/product3/product3hp.jpg",
-                "..img/product/product3/product3tnp.jpg",
-                "img/product/product3/product4hp.jpg"
+                "../img/product/product3/product3tnp.jpg",
+                "../img/product/product3/product4hp.jpg"
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "name": "Niacinamide Gentle",
+        "price": {
+            "oldPrice": 12.00,
+            "newPrice": 10.00
+        },
+        "discount": 20,
+        "img": {
+            "singleImage": "../img/product/product5/product6hp.jpg",
+            "thumbs": [
+                "../img/product/product5/product5hp.jpg",
+                "../img/product/product5/product6hp.jpg",
+                "../img/product/product5/product5_1.jpg"
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "name": "Gospel Vitamin C Skin",
+        "price": {
+            "oldPrice": 18.00,
+            "newPrice": 10.00
+        },
+        "discount": 55,
+        "img": {
+            "singleImage": "../img/product/product8hp.jpg",
+            "thumbs": [
+                "../img/product/product7hp.jpg",
+                "../img/product/product8hp.jpg",
+                "../img/product/product8hp.jpg"
             ]
         }
     }
