@@ -16,3 +16,39 @@
 .site-main .product-review ul li {
   display: flex;
 }
+.site-main .values {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.site-main .values .values-label span {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.site-main .values .values-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.site-main .values .values-list span {
+  padding: 8px 40px;
+  border: 1px solid #dee0ea;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease all;
+}
+
+.site-main .values .values-list span.active {
+  background-color: #e51414;
+  color: #fff;
+}
+
+.site-main .values .values-list span:hover {
+  background-color: #e51414;
+  color: #fff;
+}

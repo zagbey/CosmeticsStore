@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Pore Cleanse Gel Intense",
+        "price": {
+            "oldPrice": 10.00,
+            "newPrice": 5.00
+        },
+        "discount": 50,
+        "img": {
+            "singleImage": "img/product/product1hp.jpg",
+            "thumbs": [
+                "img/product/product2/prd2.jpg",
+                "img/product/product2/prd2_1.jpg",
+                "img/product/product2/prd2_2.jpg"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "name": "Gentle Cleanse",
+        "price": {
+            "oldPrice": 46.00,
+            "newPrice": 28.00
+        },
+        "discount": 50,
+        "img": {
+            "singleImage": "../img/product/product3/product3hp.jpg",
+            "thumbs": [
+                "../img/product/product3/product3hp.jpg",
+                "..img/product/product3/product3tnp.jpg",
+                "img/product/product3/product4hp.jpg"
+            ]
+        }
+    }
+    
+]
