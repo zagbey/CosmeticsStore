@@ -79,4 +79,5 @@ async function getData(){
 }
 getData();
 
-const products = localStorage.getItem("products")
+const products = localStorage.getItem("products");
+
