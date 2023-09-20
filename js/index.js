@@ -1,5 +1,6 @@
+
 //! home sidebar start
-const btnOpenSidebar = document.querySelector("#btn-menu");
+ const btnOpenSidebar = document.querySelector("#btn-menu");
 const sidebar = document.querySelector("#sidebar");
 const btnCloseSidebar = document.querySelector("#close-sidebar");
 btnOpenSidebar.addEventListener("click", function () {
@@ -9,8 +10,6 @@ btnOpenSidebar.addEventListener("click", function () {
 btnCloseSidebar.addEventListener("click", function () {
     sidebar.style.left = "-100%";
 });
-
-//! home sidebar end
 
 /* header moblie clik outsite start*/
 document.addEventListener("click", function (event) {
@@ -22,9 +21,10 @@ document.addEventListener("click", function (event) {
     }
 });
 /* header moblie clik outsite end*/
+//! home sidebar end
 
 //! slider start
-//html collection array benzeri bir nesne
+ //html collection array benzeri bir nesne
 //bunu bir className olarak çağırdıysak array olmuyor
 
 let slideIndex = 1;
@@ -80,4 +80,6 @@ async function getData(){
 getData();
 
 const products = localStorage.getItem("products");
+// console.log(JSON.parse(products));
 
+//! list product local storage 
