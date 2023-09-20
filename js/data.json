@@ -28,8 +28,8 @@
         "img": {
             "singleImage": "../img/product/product3/product3hp.jpg",
             "thumbs": [
-                "../img/product/product3/product3hp.jpg",
                 "../img/product/product3/product3tnp.jpg",
+                "../img/product/product3/product3hp.jpg",
                 "../img/product/product3/product4hp.jpg"
             ]
         }

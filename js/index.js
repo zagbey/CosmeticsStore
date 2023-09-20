@@ -1,6 +1,6 @@
 
 //! home sidebar start
- const btnOpenSidebar = document.querySelector("#btn-menu");
+const btnOpenSidebar = document.querySelector("#btn-menu");
 const sidebar = document.querySelector("#sidebar");
 const btnCloseSidebar = document.querySelector("#close-sidebar");
 btnOpenSidebar.addEventListener("click", function () {
@@ -24,7 +24,7 @@ document.addEventListener("click", function (event) {
 //! home sidebar end
 
 //! slider start
- //html collection array benzeri bir nesne
+//html collection array benzeri bir nesne
 //bunu bir className olarak çağırdıysak array olmuyor
 
 let slideIndex = 1;
@@ -71,7 +71,7 @@ function showSlides(n) {
 
 //! add product to local storage 
 
-async function getData(){
+async function getData() {
     const photos = await fetch("../js/data.json");
     const data = await photos.json();
 
@@ -83,3 +83,66 @@ const products = localStorage.getItem("products");
 // console.log(JSON.parse(products));
 
 //! list product local storage 
+let productsZ = []
+async function productFunc() {
+    productsZ =(await localStorage.getItem("products"))
+    ? JSON.parse(localStorage.getItem("products"))
+    :[];
+    const productsContainer = document.getElementById("product-list");
+    
+    let results = "";
+    productsZ.forEach((item) => {
+        results +=`
+        <li class="product-item">
+                <div class="product-image">
+                    <a href="#">
+                        <img src=${item.img.singleImage} alt="" class="img1">
+                        <img src=${item.img.thumbs[0]} alt="" class="img2">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <a href="$" class="product-title">${item.name}</a>
+                    <ul class="product-star">
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li>
+                            <i class="bi bi-star-half"></i>
+                        </li>
+                    </ul>
+                    <div class="product-prices">
+                        <strong>$${item.price.newPrice}</strong>
+                        <span>$${item.price.oldPrice}</span>
+                    </div>
+                    <span class="product-discount">-${item.discount}%</span>
+                    <div class="product-links">
+                        <button>
+                            <i class="bi bi-basket-fill"></i>
+                        </button>
+                        <button>
+                            <i class="bi bi-heart-fill"></i>
+                        </button>
+                        <a href="#">
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-share-fill"></i>
+                        </a>
+                    </div>
+                </div>
+          </li>
+        
+        `;
+        productsContainer.innerHTML= results;
+    });
+}
+productFunc();
