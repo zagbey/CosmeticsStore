@@ -82,17 +82,31 @@ getData();
 const products = localStorage.getItem("products");
 // console.log(JSON.parse(products));
 
+
+//! single-product tıklanan ürüne gitme 
+function productRoute() {
+    const productLink = document.getElementsByClassName("product-link");
+    Array.from(productLink).forEach((button) => {
+        button.addEventListener("click", function (e) {
+            e.preventDefault();
+            console.log(e.target.dataset.id);
+            const id = e.target.dataset.id;
+            localStorage.setItem("productId", JSON.stringify(id));
+            window.location.href = "single-product.html";
+        });
+    });
+}
 //! list product local storage 
 let productsZ = []
-async function productFunc() {
-    productsZ =(await localStorage.getItem("products"))
-    ? JSON.parse(localStorage.getItem("products"))
-    :[];
+function productFunc() {
+    productsZ = (localStorage.getItem("products"))
+        ? JSON.parse(localStorage.getItem("products"))
+        : [];
     const productsContainer = document.getElementById("product-list");
-    
+
     let results = "";
     productsZ.forEach((item) => {
-        results +=`
+        results += `
         <li class="product-item">
                 <div class="product-image">
                     <a href="#">
@@ -120,8 +134,8 @@ async function productFunc() {
                         </li>
                     </ul>
                     <div class="product-prices">
-                        <strong>$${item.price.newPrice}</strong>
-                        <span>$${item.price.oldPrice}</span>
+                        <strong>$${item.price.newPrice.toFixed(2)}</strong>
+                        <span>$${item.price.oldPrice.toFixed(2)}</span>
                     </div>
                     <span class="product-discount">-${item.discount}%</span>
                     <div class="product-links">
@@ -131,18 +145,20 @@ async function productFunc() {
                         <button>
                             <i class="bi bi-heart-fill"></i>
                         </button>
-                        <a href="#">
+                        <a href="#" class="product-link" data-id=${item.id}>
                             <i class="bi bi-eye-fill"></i>
                         </a>
                         <a href="#">
                             <i class="bi bi-share-fill"></i>
                         </a>
                     </div>
-                </div>
-          </li>
-        
-        `;
-        productsContainer.innerHTML= results;
+                    </div>
+                    </li>
+                    
+                    `;
+        productsContainer.innerHTML = results;
     });
 }
 productFunc();
+productRoute();
+
