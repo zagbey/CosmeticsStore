@@ -9,3 +9,7 @@
 # Sözleşme Maddeleri 
 ### Site sözleşme politika maddeleri aşağıdaki web sitesinden oluşturuldu 
 [SÖZLEŞME](https://www.privacypolicyonline.com/)
+---
+# Tıklanan ürüne gitme
+## Featured Products kısmında bulunan ürünler içindeki ikonlardan ***göz*** ikonuna tıklanınca o ürüne ait sayfaya gidiliyor 
+## Sayfadaki Başlık, eski ve yeni fiyat , ürün görseli json verilerinden geliyor 
