@@ -21,10 +21,12 @@ function productList() {
     const productOldPrice = document.querySelector(".old-price")
 
     productOldPrice.innerHTML = findProduct.price.oldPrice.toFixed(2);
+    productNewPrice.innerHTML = findProduct.price.newPrice.toFixed(2);
 
     /* product image */
     const singleImage = document.querySelector("#single-image");
     singleImage.src = findProduct.img.singleImage
 
 }
-productList();
+
+export default productList();

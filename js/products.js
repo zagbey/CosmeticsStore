@@ -1,38 +1,6 @@
 
-import headerFunc from "./header.js"
 
 
-
-//! ////////////////////////////////////////////////////////////
-
-//! add product to local storage 
-
-async function getData() {
-    const photos = await fetch("../js/data.json");
-    const data = await photos.json();
-
-    data ? localStorage.setItem("products", JSON.stringify(data)) : [];
-}
-getData();
-
-const products = localStorage.getItem("products");
-// console.log(JSON.parse(products));
-
-
-//! single-product tıklanan ürüne gitme 
-function productRoute() {
-    const productLink = document.getElementsByClassName("product-link");
-    Array.from(productLink).forEach((button) => {
-        button.addEventListener("click", function (e) {
-            e.preventDefault();
-            console.log(e.target.dataset.id);
-            const id = e.target.dataset.id;
-            localStorage.setItem("productId", JSON.stringify(id));
-            window.location.href = "single-product.html";
-        });
-    });
-}
-//! list product local storage 
 let productsZ = []
 function productFunc() {
     productsZ = (localStorage.getItem("products"))
@@ -95,6 +63,4 @@ function productFunc() {
         productsContainer.innerHTML = results;
     });
 }
-productFunc();
-productRoute();
-
+export default productFunc()
