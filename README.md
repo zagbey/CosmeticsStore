@@ -20,3 +20,6 @@
 
 ## CONTACT
 - lokasyon için map bilgi alımı için form kısmı oluşturuldu .Bootstrap kütüphanesinden **Button trigger modal** kullanıldı. 
+
+## Eksik
+- Slider otomatik değişirken 1 görsel boş geliyor ardından devam ediyor 
